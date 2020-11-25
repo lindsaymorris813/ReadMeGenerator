@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const readMe = require('./renderReadMe.js');
+const renderReadMe = require('./renderReadMe.js');
 
 inquirer
     .prompt([
@@ -50,8 +52,10 @@ inquirer
         },
     ])
     .then((response) => {
-        const filename = `${response.title.toLowerCase().split(' ').join('')}.json`;        
+        const filename = `${response.title.toLowerCase().split(' ').join('')}.md`;        
         fs.writeFile(filename, JSON.stringify(response, null, '\t'), (err) =>
         err ? console.log(err) : console.log('Success!')
         );
     });
+
+    renderReadMe();
