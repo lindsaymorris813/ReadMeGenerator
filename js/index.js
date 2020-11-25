@@ -55,17 +55,17 @@ inquirer
         const filename = 'README.md'; 
         function renderReadMe(response) {
             return (
-            `<h1>${response.title}</h1>
-            ![License]('https://img.shields.io/static/v1?label=license&message='+ ${response.license} + '&color=success')
+            `#${response.title}
+            ![License](https://img.shields.io/static/v1?label=license&message=${response.license}&color=success)
         
             ##Table of Contents:
-            -[Description](#description)
-            -[Installation](#installation)
-            -[Usage](#usage)
-            -[License](#license)
-            -[Contribute](#contribute)
-            -[Tests](#tests)
-            -[Contact](#contact)
+            *[Description](#description)
+            *[Installation](#installation)
+            *[Usage](#usage)
+            *[License](#license)
+            *[Contribute](#contribute)
+            *[Tests](#tests)
+            *[Contact](#contact)
         
             ##DESCRIPTION:
         
