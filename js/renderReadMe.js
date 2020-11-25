@@ -1,46 +1,46 @@
-function renderReadMe(response) {
-    return "
-    <h1>${response.title}</h1>
-    <p>![License]('https://img.shields.io/static/v1?label=license&message='+ ${response.license} + '&color=success')</p>
+// function renderReadMe(responses) {
+//     return (
+//     "<h1>${response.title}</h1>
+//     <p>![License]('https://img.shields.io/static/v1?label=license&message='+ ${response.license} + '&color=success')</p>
+//     <br/>
+//     <h2>Table of Contents:</h2>
+//     -[Description](#description)
+//     -[Installation](#installation)
+//     -[Usage](#usage)
+//     -[License](#license)
+//     -[Contribute](#contribute)
+//     -[Tests](#tests)
+//     -[Contact](#contact)
 
-    <h2>Table of Contents:</h2>
-    -[Description](#description)
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[License](#license)
-    -[Contribute](#contribute)
-    -[Tests](#tests)
-    -[Contact](#contact)
+//     <strong>##DESCRIPTION:</strong>
 
-    <strong>##DESCRIPTION:</strong>
+//     ${response.description}
 
-    ${response.description}
+//     <strong>##INSTALLATION</strong>
 
-    <strong>##INSTALLATION</strong>
+//     ${response.installation}
 
-    ${response.installation}
+//     <strong>##USAGE</strong>
 
-    <strong>##USAGE</strong>
+//     ${response.usage}
 
-    ${response.usage}
+//     <strong>##LICENSE</strong>
 
-    <strong>##LICENSE</strong>
+//     ${response.license}
 
-    ${response.license}
+//     <strong>##CONTRIBUTE</strong>
 
-    <strong>##CONTRIBUTE</strong>
+//     ${response.contribute}
 
-    ${response.contribute}
+//     <strong>##TESTS</strong>
 
-    <strong>##TESTS</strong>
+//     ${response.tests}
 
-    ${response.tests}
+//     <strong>##CONTACT</strong>
 
-    <strong>##CONTACT</strong>
+//     GitHub: ${response.gitHub}
+//     Email: ${response.email}
+//     ");
+// };
 
-    GitHub: ${response.gitHub}
-    Email: ${response.email}
-    ";
-};
-
-module.exports = renderReadMe;
+// module.exports = renderReadMe();

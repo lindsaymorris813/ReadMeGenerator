@@ -52,10 +52,55 @@ inquirer
         },
     ])
     .then((response) => {
-        const filename = `${response.title.toLowerCase().split(' ').join('')}.md`;        
-        fs.writeFile(filename, JSON.stringify(response, null, '\t'), (err) =>
-        err ? console.log(err) : console.log('Success!')
-        );
+        const filename = 'README.md'; 
+        function renderReadMe(response) {
+            return (
+            `<h1>${response.title}</h1>
+            <p>![License]('https://img.shields.io/static/v1?label=license&message='+ ${response.license} + '&color=success')</p>
+            <br/>
+            <h2>Table of Contents:</h2>
+            -[Description](#description)
+            -[Installation](#installation)
+            -[Usage](#usage)
+            -[License](#license)
+            -[Contribute](#contribute)
+            -[Tests](#tests)
+            -[Contact](#contact)
+        
+            <strong>##DESCRIPTION:</strong>
+        
+            ${response.description}
+        
+            <strong>##INSTALLATION</strong>
+        
+            ${response.installation}
+        
+            <strong>##USAGE</strong>
+        
+            ${response.usage}
+        
+            <strong>##LICENSE</strong>
+        
+            ${response.license}
+        
+            <strong>##CONTRIBUTE</strong>
+        
+            ${response.contribute}
+        
+            <strong>##TESTS</strong>
+        
+            ${response.tests}
+        
+            <strong>##CONTACT</strong>
+        
+            GitHub: ${response.gitHub}
+            Email: ${response.email}
+            `);
+        };
+        const renderedReadMe = renderReadMe(response);
+            
+        fs.writeFile(filename, renderedReadMe, (err) => {
+            err ? console.error(err) : console.log('ReadMe created!')
+          });
     });
-
-    renderReadMe();
+    
