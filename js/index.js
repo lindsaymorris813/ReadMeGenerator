@@ -49,6 +49,9 @@ inquirer
             message: 'What is your email address?',
         },
     ])
-    .then((response => {
-
-    }))
+    .then((response) => {
+        const filename = `${response.title.toLowerCase().split(' ').join('')}.json`;        
+        fs.writeFile(filename, JSON.stringify(response, null, '\t'), (err) =>
+        err ? console.log(err) : console.log('Success!')
+        );
+    });
