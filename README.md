@@ -11,9 +11,7 @@ IMAGES:
 [Created ReadMe](img/createdReadMe.png)
 [Video WalkThrough](img/readMe.mov)
 
-## Requirements
-
-*## User Story
+## User Story
 
 ```md
 AS A developer
