@@ -1,8 +1,8 @@
 
-            #sedkljgsldg
-            ![License](https://img.shields.io/static/v1?label=license&message=MIT&color=success)
+            # Project Title
+            [![License](https://img.shields.io/static/v1?label=license&message=MIT&color=success)](https://github.com/lindsaymorris813/ReadMeGenerator)
         
-            ##Table of Contents:
+            ## Table of Contents:
             *[Description](#description)
             *[Installation](#installation)
             *[Usage](#usage)
@@ -11,32 +11,32 @@
             *[Tests](#tests)
             *[Contact](#contact)
         
-            ##DESCRIPTION:
+            ## DESCRIPTION:
         
-            lsdkgewiotjlk
+            project description
         
-            ##INSTALLATION
+            ## INSTALLATION
         
-            sdgnsjkdgjskhgosekl
+            project installation
         
-            ##USAGE
+            ## USAGE
         
-            geslkdhgdskngs
+            project usage
         
-            ##LICENSE
+            ## LICENSE
         
             MIT
         
-            ##CONTRIBUTE
+            ## CONTRIBUTE
         
-            sdughqawogbaklwbg
+            project contribute
         
-            ##TESTS
+            ## TESTS
         
-            gsdkjhgdskg
+            project tests
         
-            ##CONTACT
+            ## CONTACT
         
-            GitHub: sedkjhgjadsg
-            Email: geioahtklansvzd
+            GitHub: lindsaymorris813
+            Email: lindsaymorrisss@gmail.com
             
