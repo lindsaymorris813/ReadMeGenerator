@@ -54,52 +54,52 @@ inquirer
     .then((response) => {
         const filename = 'README.md'; 
         function renderReadMe(response) {
-            return (`
-            # ${response.title}
-            [![License](https://img.shields.io/static/v1?label=license&message=${response.license}&color=success)](https://github.com/lindsaymorris813/ReadMeGenerator)
-        
-            ## Table of Contents:
-            *[Description](#description)
-            *[Installation](#installation)
-            *[Usage](#usage)
-            *[License](#license)
-            *[Contribute](#contribute)
-            *[Tests](#tests)
-            *[Contact](#contact)
-        
-            ## DESCRIPTION:
-        
-            ${response.description}
-        
-            ## INSTALLATION
-        
-            ${response.installation}
-        
-            ## USAGE
-        
-            ${response.usage}
-        
-            ## LICENSE
-        
-            ${response.license}
-        
-            ## CONTRIBUTE
-        
-            ${response.contribute}
-        
-            ## TESTS
-        
-            ${response.tests}
-        
-            ## CONTACT
-        
-            GitHub: ${response.gitHub}
-            Email: ${response.email}
-            `);
+return (`
+# ${response.title}
+[![License](https://img.shields.io/static/v1?label=license&message=${response.license}&color=success)](https://github.com/lindsaymorris813/ReadMeGenerator)
+
+## Table of Contents:
+*[Description](#description)
+*[Installation](#installation)
+*[Usage](#usage)
+*[License](#license)
+*[Contribute](#contribute)
+*[Tests](#tests)
+*[Questions](#questions)
+
+## DESCRIPTION:
+
+${response.description}
+
+## INSTALLATION
+
+${response.installation}
+
+## USAGE
+
+${response.usage}
+
+## LICENSE
+
+${response.license}
+
+## CONTRIBUTE
+
+${response.contribute}
+
+## TESTS
+
+${response.tests}
+
+## QUESTIONS
+
+GitHub: ${response.gitHub}
+Email: ${response.email}
+`);
         };
         const renderedReadMe = renderReadMe(response);
             
-        fs.writeFile('../create/' + filename, renderedReadMe, (err) => {
+        fs.writeFile('../created/' + filename, renderedReadMe, (err) => {
             err ? console.error(err) : console.log('ReadMe created!')
           });
     });
