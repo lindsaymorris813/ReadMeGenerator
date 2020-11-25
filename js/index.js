@@ -56,9 +56,9 @@ inquirer
         function renderReadMe(response) {
             return (
             `<h1>${response.title}</h1>
-            <p>![License]('https://img.shields.io/static/v1?label=license&message='+ ${response.license} + '&color=success')</p>
-            <br/>
-            <h2>Table of Contents:</h2>
+            ![License]('https://img.shields.io/static/v1?label=license&message='+ ${response.license} + '&color=success')
+        
+            ##Table of Contents:
             -[Description](#description)
             -[Installation](#installation)
             -[Usage](#usage)
@@ -67,31 +67,31 @@ inquirer
             -[Tests](#tests)
             -[Contact](#contact)
         
-            <strong>##DESCRIPTION:</strong>
+            ##DESCRIPTION:
         
             ${response.description}
         
-            <strong>##INSTALLATION</strong>
+            ##INSTALLATION
         
             ${response.installation}
         
-            <strong>##USAGE</strong>
+            ##USAGE
         
             ${response.usage}
         
-            <strong>##LICENSE</strong>
+            ##LICENSE
         
             ${response.license}
         
-            <strong>##CONTRIBUTE</strong>
+            ##CONTRIBUTE
         
             ${response.contribute}
         
-            <strong>##TESTS</strong>
+            ##TESTS
         
             ${response.tests}
         
-            <strong>##CONTACT</strong>
+            ##CONTACT
         
             GitHub: ${response.gitHub}
             Email: ${response.email}
@@ -99,7 +99,7 @@ inquirer
         };
         const renderedReadMe = renderReadMe(response);
             
-        fs.writeFile(filename, renderedReadMe, (err) => {
+        fs.writeFile('../create/' + filename, renderedReadMe, (err) => {
             err ? console.error(err) : console.log('ReadMe created!')
           });
     });
