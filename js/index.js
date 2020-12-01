@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const readMe = require('./renderReadMe.js');
-const renderReadMe = require('./renderReadMe.js');
+
 
 inquirer
     .prompt([
